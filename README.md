@@ -1,6 +1,6 @@
 # Windkessel model identification
 
-**Tools and example data to identify lumped-parameter models of cardiac afterloads**, specifically 2-element Windkessel, 3-element Windkessel, and parallel 4-element Windkessel models from measured pressure and flow. The identification is done with Newtons method using forward-mode automatic differentiation in Julia.
+**Tools and example data to identify lumped-parameter models of cardiac afterloads**, specifically 2-element Windkessel, 3-element Windkessel, and parallel 4-element Windkessel models from measured pressure and flow. The identification is done with Newton's method using forward-mode automatic differentiation in Julia.
 
 The data and methods presented here were used to generate the results presented in the article "Identification of cardiac afterload dynamics from data".
 
