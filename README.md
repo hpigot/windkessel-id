@@ -14,7 +14,7 @@ The identification code uses [ControlSystems.jl](https://github.com/JuliaControl
 
 Aortic pressure and flow measurements are provided from three sources. In addition to [oeid.jl](oeid.jl), [idanalysis.jl](idanalysis.jl) provides multiple initialization as well as analysis and plotting functions.
 
-[stergiopulos1999_data/](stergiopulos1999_data/) contains previously published human data, from Figure 4A type A beat of [_Total Arterial Inertance as the Fourth Element of the Windkessel Model,_ Stergiopulos et al. (1999)](http://doi.org/10.1152/ajpheart.1999.276.1.H81), digitized using [Webplotdigitizer v4.4]({https://automeris.io/WebPlotDigitizer).
+[stergiopulos1999_data/](stergiopulos1999_data/) contains previously published human data, from Figure 4A type A beat of [_Total Arterial Inertance as the Fourth Element of the Windkessel Model,_ Stergiopulos et al. (1999)](http://doi.org/10.1152/ajpheart.1999.276.1.H81), digitized using [Webplotdigitizer v4.4]({https://automeris.io/WebPlotDigitizer). Pressure in mmHg, flow in mL/s.
 
 [invivo_data/](invivo_data/) contains data measured in vivo in a 70kg pig. Pressure in mmHg, flow in L/min.
 

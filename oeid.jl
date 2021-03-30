@@ -73,7 +73,7 @@ Returns the cost (to be minimized).
 function cost(p,id::IdConditions,u,y,h)
     θ,x0 = deal(p,id)
     if id.x0solve x0 = solvex0(id.G_(θ,h),u) end
-    ym, = lsim(id.G_(θ,h),u,h.*(1:length(u)),x0)
+    ym, = lsim(id.G_(θ,h),u,h.*(1:length(u)),x0=x0)
     return dot(y-ym,y-ym)
 end
 
@@ -81,7 +81,7 @@ end
 Simulate discrete-time system G(θ,h) with input vector u, starting in initial condition x0.
 """
 function simulate(θ,x0,u,h; xout=false)
-    y, _, x = lsim(G(θ,h),u,h.*(1:length(u)),x0)
+    y, _, x = lsim(G(θ,h),u,h.*(1:length(u)),x0=x0)
     return xout ? (y, x) : y
 end
 
